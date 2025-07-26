@@ -38,7 +38,7 @@ const TestimonialsSection: React.FC = () => {
           <span className="testimonials-subtitle">Testimonials</span>
           <h2 className="testimonials-title">Client Experiences</h2>
           <p className="testimonials-description">
-            Hear from luxury brands and discerning clients who've experienced the AshNoire touch.
+            Hear from luxury brands and discerning clients who&apos;ve experienced the AshNoire touch.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ const TestimonialsSection: React.FC = () => {
                         />
                         <div>
                             <h4 className="author-name">Marcus Johnson</h4>
-                            <p className="author-tittle">Principal Broker, Elite Properties</p>
+                            <p className="author-title">Principal Broker, Elite Properties</p>
                         </div>
                     </div>
                 </div>
