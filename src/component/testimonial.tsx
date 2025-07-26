@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const TestimonialsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -52,10 +53,13 @@ const TestimonialsSection: React.FC = () => {
               </p>
             </div>
             <div className="testimonial-author">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
                 alt="Portrait of luxury skincare brand CEO"
                 className="author-image"
+                width={80}
+                height={80}
+                style={{ borderRadius: '50%' }}
               />
               <div>
                 <h4 className="author-name">Danielle Carter</h4>
@@ -73,7 +77,14 @@ const TestimonialsSection: React.FC = () => {
                      </p>
                  </div>
                     <div className="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Portrait of luxury real estate broker" className="author-image" />
+                        <Image
+                          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                          alt="Portrait of luxury real estate broker"
+                          className="author-image"
+                          width={80}
+                          height={80}
+                          style={{ borderRadius: '50%' }}
+                        />
                         <div>
                             <h4 className="author-name">Marcus Johnson</h4>
                             <p className="author-tittle">Principal Broker, Elite Properties</p>

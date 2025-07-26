@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 const logos = [
   {
@@ -26,7 +27,7 @@ const logos = [
 ];
 
 const Brands: React.FC = () => {
-  const logoRefs = useRef<(HTMLImageElement | null)[]>([]);
+  const logoRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleIndexes, setVisibleIndexes] = useState<number[]>([]);
 
   useEffect(() => {
@@ -56,17 +57,23 @@ const Brands: React.FC = () => {
         <h3 className="brands-title">TRUSTED BY PREMIUM BRANDS</h3>
         <div className="brands-logos">
           {logos.map((logo, index) => (
-            <img
+            <div
               key={index}
-              ref={(el) => (logoRefs.current[index] = el)}
+              ref={(el) => { logoRefs.current[index] = el ?? null; }}
               data-index={index}
-              src={logo.src}
-              alt={logo.alt}
               className={`brand-logo ${
                 visibleIndexes.includes(index) ? 'logo-visible' : ''
               }`}
               style={{ animationDelay: `${index * 0.15}s` }}
-            />
+            >
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                fill
+                style={{ objectFit: 'contain' }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
           ))}
         </div>
       </div>
