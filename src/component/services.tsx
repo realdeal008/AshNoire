@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 
 const ServicesSection: React.FC = () => {
-  const serviceRefs = useRef<HTMLDivElement[]>([]);
+  const serviceRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -79,7 +79,7 @@ const ServicesSection: React.FC = () => {
             <div
               key={index}
               className={`service-card`}
-              ref={el => (serviceRefs.current[index] = el!)}
+              ref={el => { serviceRefs.current[index] = el ?? null; }}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className={`service-icon ${service.gradient}`}>
