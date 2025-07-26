@@ -18,12 +18,14 @@ const ServicesSection: React.FC = () => {
       }
     );
 
-    serviceRefs.current.forEach(ref => {
+    const currentRefs = serviceRefs.current;
+
+    currentRefs.forEach(ref => {
       if (ref) observer.observe(ref);
     });
 
     return () => {
-      serviceRefs.current.forEach(ref => {
+      currentRefs.forEach(ref => {
         if (ref) observer.unobserve(ref);
       });
     };
@@ -79,7 +81,8 @@ const ServicesSection: React.FC = () => {
             <div
               key={index}
               className={`service-card`}
-              ref={el => { serviceRefs.current[index] = el ?? null; }}
+              ref={(el: HTMLDivElement | null) =>
+                { serviceRefs.current[index] = el ?? null; }}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className={`service-icon ${service.gradient}`}>
