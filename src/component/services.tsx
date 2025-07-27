@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
+import { BsCalendar2EventFill } from 'react-icons/bs';
 
 const ServicesSection: React.FC = () => {
   const serviceRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -56,7 +57,7 @@ const ServicesSection: React.FC = () => {
               gradient: 'red-to-gold'
             },
             {
-              icon: 'fa-solid fa-calendar-star',
+              icon:BsCalendar2EventFill,
               title: 'Premium Event Design',
               description: 'Bespoke event experiences from intimate gatherings to grand celebrations, infused with luxury details and cultural richness.',
               points: [
