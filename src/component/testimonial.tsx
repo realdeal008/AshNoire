@@ -54,7 +54,7 @@ const TestimonialsSection: React.FC = () => {
             </div>
             <div className="testimonial-author">
               <Image
-                src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="/one.jpg"
                 alt="Portrait of luxury skincare brand CEO"
                 className="author-image"
                 width={80}
@@ -78,7 +78,7 @@ const TestimonialsSection: React.FC = () => {
             </div>
             <div className="testimonial-author">
               <Image
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                src="/two.jpg"
                 alt="Portrait of luxury real estate broker"
                 className="author-image"
                 width={80}
