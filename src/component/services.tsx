@@ -45,7 +45,7 @@ const ServicesSection: React.FC = () => {
         <div className="services-grid">
           {[
             {
-              icon: 'fas fa-camera-retro',
+              icon: 'fa-solid fa-camera-retro',
               title: 'Luxury Content Creation',
               description: 'High-end visual storytelling for premium brands, featuring cinematic photography, elegant videography, and sophisticated styling.',
               points: [
@@ -56,7 +56,7 @@ const ServicesSection: React.FC = () => {
               gradient: 'red-to-gold'
             },
             {
-              icon: 'fas fa-calendar-star',
+              icon: 'fa-solid fa-calendar-star',
               title: 'Premium Event Design',
               description: 'Bespoke event experiences from intimate gatherings to grand celebrations, infused with luxury details and cultural richness.',
               points: [
@@ -67,7 +67,7 @@ const ServicesSection: React.FC = () => {
               gradient: 'gold-to-gray'
             },
             {
-              icon: 'fas fa-paint-brush',
+              icon: 'fa-solid fa-paint-brush',
               title: 'Brand Experience Design',
               description: 'Comprehensive brand packaging that communicates exclusivity and sophistication across all touchpoints.',
               points: [
