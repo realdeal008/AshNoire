@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import ScriptLoader from "@/component/ScriptLoader";
 
@@ -37,10 +38,11 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
-        <script
+        <Script
           src="https://kit.fontawesome.com/YOUR_KIT_ID.js"
+          strategy="lazyOnload"
           crossOrigin="anonymous"
-        ></script>
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
