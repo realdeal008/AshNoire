@@ -25,7 +25,7 @@ const PortfolioSection: React.FC = () => {
       height: 300,
     },
     {
-      src: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80',
+      src: '/Brand.avif ',
       title: 'BRAND PACKAGING',
       text: 'Premium cosmetic line packaging',
       category: 'branding',
@@ -34,7 +34,7 @@ const PortfolioSection: React.FC = () => {
       height: 300,
     },
     {
-      src: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=761&q=80',
+      src: '/lead.avif',
       title: 'EXECUTIVE PORTRAITS',
       text: 'Corporate leadership photography',
       category: 'content',
@@ -43,7 +43,7 @@ const PortfolioSection: React.FC = () => {
       height: 300,
     },
     {
-      src: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+      src: '/shut.jpeg ',
       title: 'PRODUCT LAUNCH',
       text: 'Exclusive brand launch event',
       category: 'events',

@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -28,7 +29,7 @@ const Hero: React.FC = () => {
           <div className="hero-image-wrapper">
             <div className="hero-image-circle">
               <Image
-                src="/ashlogo.png"
+                src="/Ashlogo.jpeg"
                 alt="Elegant portrait of AshNoire"
                 className="hero-image"
                 width={300}
