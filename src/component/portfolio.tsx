@@ -25,7 +25,7 @@ const PortfolioSection: React.FC = () => {
       height: 300,
     },
     {
-      src: '/Brand.avif ',
+      src: '/brand.avif',
       title: 'BRAND PACKAGING',
       text: 'Premium cosmetic line packaging',
       category: 'branding',
@@ -43,7 +43,7 @@ const PortfolioSection: React.FC = () => {
       height: 300,
     },
     {
-      src: '/shut.jpeg ',
+      src: '/shut.jpeg',
       title: 'PRODUCT LAUNCH',
       text: 'Exclusive brand launch event',
       category: 'events',
