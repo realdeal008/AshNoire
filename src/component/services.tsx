@@ -87,7 +87,11 @@ const ServicesSection: React.FC = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className={`service-icon ${service.gradient}`}>
-                <i className={service.icon}></i>
+                {typeof service.icon === 'string' ? (
+                  <i className={service.icon}></i>
+                ) : (
+                  <service.icon />
+                )}
               </div>
               <div className="service-content">
                 <h3>{service.title}</h3>
