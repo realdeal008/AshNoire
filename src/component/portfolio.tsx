@@ -25,7 +25,7 @@ const PortfolioSection: React.FC = () => {
       height: 300,
     },
     {
-      src: '/brand.avif',
+      src: '/Brand.avif',
       title: 'BRAND PACKAGING',
       text: 'Premium cosmetic line packaging',
       category: 'branding',
@@ -52,7 +52,7 @@ const PortfolioSection: React.FC = () => {
       height: 300,
     },
     {
-      src: '/photopor.avif',
+      src: '/photopor.jpg',
       title: 'VISUAL IDENTITY',
       text: 'Comprehensive brand guidelines',
       category: 'branding',
